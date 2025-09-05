@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portafolio personal de estudiante SENA con proyectos, blog, productos y contacto.">
+    <meta name="keywords" content="portafolio, desarrollo web, HTML, proyectos, SENA">
+    <meta name="author" content="Tu Nombre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        header, footer { background: #004b23; color: white; text-align: center; padding: 15px; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        main { padding: 20px; }
+        section, article, aside { background: white; margin-bottom: 20px; padding: 15px; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        form input, form textarea, form button { display: block; width: 100%; margin-bottom: 10px; padding: 8px; }
+     
+         /* 🔹 Ajustar tamaño de las imágenes */
+    img { 
+        max-width: 450px; /* ancho máximo */
+        height: auto;     /* mantiene proporción */
+        display: block;   /* para poder centrar */
+        margin: 10px auto;
+        border-radius: 8px; /* opcional: bordes redondeados */
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* opcional: sombra */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#videos">Multimedia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy un estudiante del SENA que esta desarrolando la actividad 3.4</p>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Primera actividad en HTML</h3>
+                <p>Este fue mi primer trabajo web donde aprendí HTML</p>
+                <img src="ACTIVIDAD 1 pagina web.png" alt="Actividad 1">
+            </article>
+            <article>
+                <h3>Segunda Actividad en HTML</h3>
+                <p>Aqui desarrolle formularios y tablas para estructurar información.</p>
+                <img src="Tabla actividad.png" alt="Ejemplo formulario">
+            </article>
+            <aside>
+                <h4>Notas rápidas</h4>
+                <p>Siempre es importante validar datos en formularios y cuidar la semántica del HTML.</p>
+            </aside>
+        </section>
+        <section id="videos">
+            <h2>Galería Multimedia</h2>
+            <ul>
+                <li>
+                    <video width="320" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </li>
+                <li>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </li>
+            </ul>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Agregar al carrito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curso HTML</td>
+                        <td>$50.000</td>
+                        <td><input type="checkbox"> Seleccionar</td>
+                    </tr>
+                    <tr>
+                        <td>Curso CSS</td>
+                        <td>$60.000</td>
+                        <td><input type="checkbox"> Seleccionar</td>
+                    </tr>
+                    <tr>
+                        <td>Curso JavaScript</td>
+                        <td>$70.000</td>
+                        <td><input type="checkbox"> Seleccionar</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Carrito de compras</h3>
+            <ul>
+                <li>Curso HTML</li>
+                <li>Curso CSS</li>
+            </ul>
+      </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej: 3101234567" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Portafolio Personal</p>
+    </footer>
+</body>
+</html>

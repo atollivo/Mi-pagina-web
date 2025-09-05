@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body><form>
+  <fieldset>
+    <legend>Datos Personales</legend>
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" placeholder="Ej: 3001234567"><br><br>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+    <a href="#info">Ir a Información Adicional</a>
+  </fieldset>
+
+  <fieldset id="info">
+    <legend>Información Adicional</legend>
+
+    <label>Género:</label>
+    <input type="radio" name="genero" value="masculino" required> Masculino
+    <input type="radio" name="genero" value="femenino"> Femenino
+    <input type="radio" name="genero" value="otro"> Otro
+    <br><br>
+
+    <label>Gustos:</label>
+    <input type="checkbox" name="gustos" value="musica"> Música
+    <input type="checkbox" name="gustos" value="deporte"> Deporte
+    <input type="checkbox" name="gustos" value="cine"> Cine
+    <br><br>
+    <a href="#top">Volver arriba</a>
+  </fieldset>
+
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+<p id="top">Visita: 
+  <a href="actividad.HTML" target="_blank">actividad</a>
+</p>
+</form>
+</body>
+</html>
